@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Formulario de Prevalorización</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="ldcampos">
+        <form id="prevalorizacion-form">
+            <h2 style="text-decoration: underline; font-style: oblique;">Prevalorización</h2> <br>
+
+            <div class="sup" style="justify-content: space-between;">
+                <input type="text" name="expediente" id="expediente" placeholder="Expediente:"  style="width: 30%;" required>
+                <input type="date" name="fecha" id="fecha" style="width: 30%;" required>
+            </div> <br>
+
+            <div class="campos">
+                <input type="text" id="nombre" placeholder="Nombre:" style="width: 65%;" required>
+                    <select name="sexo" id="sexo" style="width: 15%; background-color: rgb(248, 248, 248); border: none;">
+                        <option value="">Sexo</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                    </select>      
+                <input type="number" id="edad" placeholder="Edad:" style="width: 15%;" required>
+
+            </div> <br>
+            <div class="campos" style="justify-content: left;"> 
+                <h6 style="margin-bottom: 0; position: relative; top: 10px; color: rgb(90, 90, 90);">Fecha de nacimiento:</h6>
+                <input type="date" name="nacimiento" id="nacimiento" style="width: 30%; color: gray;" required>
+                <select name="municipio" id="municipio" style="width: 35%; margin-left: 32px; background-color: rgb(248, 248, 248); border: none;" required>
+                    <option value="">Municipio</option>
+                    <option value="Canatlán">Canatlán</option>
+                    <option value="Canelas">Canelas</option>
+                    <option value="Coneto de Comonfort">Coneto de Comonfort</option>
+                    <option value="Cuencamé">Cuencamé</option>
+                    <option value="Durango">Durango</option>
+                    <option value="El Oro">El Oro</option>
+                    <option value="General Simón Bolívar">General Simón Bolívar</option>
+                    <option value="Gómez Palacio">Gómez Palacio</option>
+                    <option value="Guadalupe Victoria">Guadalupe Victoria</option>
+                    <option value="Guanaceví">Guanaceví</option>
+                    <option value="Hidalgo">Hidalgo</option>
+                    <option value="Indé">Indé</option>
+                    <option value="Lerdo">Lerdo</option>
+                    <option value="Mapimí">Mapimí</option>
+                    <option value="Mezquital">Mezquital</option>
+                    <option value="Nazas">Nazas</option>
+                    <option value="Nombre de Dios">Nombre de Dios</option>
+                    <option value="Nuevo Ideal">Nuevo Ideal</option>
+                    <option value="Ocampo">Ocampo</option>
+                    <option value="Otáez">Otáez</option>
+                    <option value="Pánuco de Coronado">Pánuco de Coronado</option>
+                    <option value="Peñón Blanco">Peñón Blanco</option>
+                    <option value="Poanas">Poanas</option>
+                    <option value="Pueblo Nuevo">Pueblo Nuevo</option>
+                    <option value="Rodeo">Rodeo</option>
+                    <option value="San Bernardo">San Bernardo</option>
+                    <option value="San Dimas">San Dimas</option>
+                    <option value="San Juan de Guadalupe">San Juan de Guadalupe</option>
+                    <option value="San Juan del Río">San Juan del Río</option>
+                    <option value="San Luis del Cordero">San Luis del Cordero</option>
+                    <option value="San Pedro del Gallo">San Pedro del Gallo</option>
+                    <option value="Santa Clara">Santa Clara</option>
+                    <option value="Santiago Papasquiaro">Santiago Papasquiaro</option>
+                    <option value="Súchil">Súchil</option>
+                    <option value="Tamazula">Tamazula</option>
+                    <option value="Tepehuanes">Tepehuanes</option>
+                    <option value="Tlahualilo">Tlahualilo</option>
+                    <option value="Topia">Topia</option>
+                    <option value="Vicente Guerrero">Vicente Guerrero</option>
+                </select>
+                
+            </div>
+<br>
+            <div class="campos"> 
+                <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio:  (Calle Num. Colonia o Fraccionamiento)" style="width: 57%;" required>
+                <input type="tel" id="telefono" name="telefono" placeholder="Teléfono:"  style="width: 40%;" required>
+
+            </div>
+            <br>
+
+            <div class="campos">
+                <input type="text" name="religion" id="religion" placeholder="Religión:" style="width: 32%;">
+                <input type="text" name="civil" id="civil" placeholder="Estado civil:" style="width: 25%;">
+                <select name="carrera" id="carrera" style="width: auto; background-color: rgb(248, 248, 248); border: none; ">
+                    <option value="">Carrera</option>
+                    <option value="Tecnologías de la información">Tecnologías de la información</option>
+                    <option value="Desarrollo de negocios">Desarrollo de negocios</option>
+                    <option value="Química tecnología ambiental ">Química tecnología ambiental</option>
+                    <option value="Agricultura sustentable y protegida">Agricultura sustentable y protegida</option>
+                    <option value="Producción animal">Producción animal</option>
+                </select>              </div> 
+<br>
+ 
+            <div class="campos">    
+                <input type="number" name="matricula" id="matricula" placeholder="Matrícula:" style="width: 25%;" required>
+                <input type="text" name="tutor" id="tutor" placeholder="Tutor:" style="width: 30%;" required>
+                <input type="text" name="origen" id="origen" placeholder="Origen:" style="width:20%">
+               <input type="text" name="hijos" id="hijos" placeholder="Hijos:" style="width: 15%;">
+            </div>
+            <br>
+
+            <div class="campos">
+            <h6 style="position: relative; top: 10px; color: rgb(90, 90, 90);">Anteriormente ha asistido al psicólogo:</h6>    
+            <select name="asistido" id="asistido" style="width: 15%; background-color: rgb(248, 248, 248); border: none;">
+                <option value="">SI / NO</option>
+                <option value="si">SI</option>
+                <option value="no">NO</option>
+            </select> 
+            <h6 style="width: auto; position: relative; top: 10px; color: rgb(90, 90, 90);">Tiempo:</h6>
+            <input type="text" name="tiempo" id="tiempo" style="width: 28%;"> 
+            </div>
+<br>
+            <div class="campos">
+                <input type="number" id="emergencia" placeholder="Contacto de emergencia:" required>
+                <input type="text" id="parentesco" placeholder="Parentesco:" required>
+            </div>
+<br>
+
+             <div class="Motivo" style="justify-content: space-between; display: flex; ">
+                <h5 style="position: relative; top: 10px;"><b> MOTIVO DE CONSULTA:</b> </h5>
+                <h6 style=" position: relative; top: 10px; color: rgb(90, 90, 90);">(Qué, Desde cuándo, Por qué y que hacen: Familia y paciente con el sx)</h6>
+            </div> <br>
+            <div class="textarea" style="justify-content: center;">
+                <textarea name="motivo-consulta" id="motivo-consulta" placeholder="Motivo de la consulta:" style="width: 94%;  height: 150px; color: rgb(87, 84, 84); margin-left: 3%; border: 1px solid gray; border-radius: 5px;"></textarea> 
+
+            </div>
+            <br>
+
+            <label for="sintomatologia">Sintomatología:</label>
+            <div class="sintomalinea">
+                <div>
+                    <input type="checkbox" id="Agresividad" value="Agresividad">
+                    <label for="sintoma 1">Agresividad</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Bajo rendimiento academico" value="Bajo rendimiento academico">
+                    <label for="sintoma 2">Bajo rendimiento académico</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Farmaco dependiente" value="Farmaco dependiente">
+                    <label for="sintoma 3">Farmaco dependiente</label>
+                </div>
+
+                <div>
+
+                    <input type="checkbox" id="Alcoholismo" value="Alcoholismo">
+                    <label for="sintoma 4">Alcoholismo</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Cefaleas" value="Cefaleas">
+                    <label for="sintoma 5">Cefaleas</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Fobias" value="Fobias">
+                    <label for="sintoma 6">Fobias</label>
+                </div>
+
+
+                <div>
+                    <input type="checkbox" id="Alucinaciones" value="Alucinaciones">
+                    <label for="sintoma 7">Alucinaciones</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Chupeteo de dedo" value="Chupeteo de dedo">
+                    <label for="sintoma 8">Chupeteo de dedo</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Hiperactividad" value="Hiperactividad">
+                    <label for="sintoma 9">Hiperactividad</label>
+                </div>
+               
+
+                <div>
+                    <input type="checkbox" id="Ansiedad" value="Ansiedad">
+                    <label for="sintoma 10">Ansiedad</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Convulsiones" value="Convulsiones">
+                    <label for="sintoma 11">Convulsiones</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Intentos de suicidio" value="Intentos de suicidio">
+                    <label for="sintoma 12">Intentos de suicidio</label>
+                </div>
+
+
+                <div>
+                    <input type="checkbox" id="Falta de concentracion" value="Falta de concentracion">
+                    <label for="sintoma 13">Falta de concentración</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Desmayos" value="Desmayos">
+                    <label for="sintoma 14">Desmayos</label>
+                </div> 
+                <div>
+                    <input type="checkbox" id="Ideas de muerte" value="Ideas de muerte">
+                    <label for="sintoma 15">Ideas de muerte</label>
+                </div>
+
+                
+                <div>
+                    <input type="checkbox" id="Auto-agresion" value="Auto-agresion">
+                    <label for="sintoma 16">Auto-agresion</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Enuresis" value="Enuresis">
+                    <label for="sintoma 17">Enuresis</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Impulsividad" value="Impulsividad">
+                    <label for="sintoma 18">Impulsividad</label>
+                </div>
+
+
+                <div>
+                    <input type="checkbox" id="Bajo autoestima" value="Bajo autoestima">
+                    <label for="sintoma 19">Bajo autoestima</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Encopresis" value="Encopresis">
+                    <label for="sintoma 20">Encopresis</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Tics" value="Tics">
+                    <label for="sintoma 21">Tics</label>
+                </div>
+
+
+                <div>
+                    <input type="checkbox" id="Insomio" value="Insomio">
+                    <label for="sintoma 22">Insomio</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Obsesiones" value="Obsesiones">
+                    <label for="sintoma 23">Obsesiones</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Timidez" value="Timidez">
+                    <label for="sintoma 24">Timidez</label>
+                </div>
+
+
+                <div>
+                    <input type="checkbox" id="Intolerante" value="Intolerante">
+                    <label for="sintoma 25">Intolerante</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Onicofagia" value="Onicofagia">
+                    <label for="sintoma 26">Onicofagia</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Transtorno de aprendizaje" value="Transtorno de aprendizaje">
+                    <label for="sintoma 27">Transtorno de aprendizaje</label>
+                </div>
+
+
+                <div>
+                    <input type="checkbox" id="Llanto excesivo" value="Llanto excesivo">
+                    <label for="sintoma 28">Llanto excesivo</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Pesadillas" value="Pesadillas">
+                    <label for="sintoma 29">Pesadillas</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Transtorno auditivo" value="Transtorno auditivo">
+                    <label for="sintoma 30">Transtorno auditivo</label>
+                </div>
+
+
+                <div>
+                    <input type="checkbox" id="Maltrato fisico" value="Maltrato fisico">
+                    <label for="sintoma 31">Maltrato físico</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Problemas de alimentacion" value="Problemas de alimentacion">
+                    <label for="sintoma 32">Problemas de alimentación</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Capacidad de Insigth" value="Capacidad de Insigth">
+                    <label for="sintoma 33">Capacidad de Insigth</label>
+                </div>
+
+
+                <div>
+                    <input type="checkbox" id="Maltrato sexual" value="Maltrato sexual">
+                    <label for="sintoma 34">Maltrato sexual</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Problemas visuales" value="Problemas visuales">
+                    <label for="sintoma 35">Problemas visuales</label>
+                </div>
+                
+
+<div></div>
+                <div>
+                    <input type="checkbox" id="Mareos" value="Mareos">
+                    <label for="sintoma 36">Mareos</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Sonambulismo" value="Sonambulismo">
+                    <label for="sintoma 37">Sonambulismo</label>
+                </div>
+    <div></div>
+            <div>
+                <input type="checkbox" id="Obesidad" value="Obesidad">
+                <label for="sintoma 38">Obesidad</label>
+            </div>
+            <div>
+                <input type="checkbox" id="Tartamudez" value="Tartamudez">
+                <label for="sintoma 38">Tartamudez</label>
+            </div>
+
+            </div>
+<br>
+<h5 style="position: relative; top: 10px;"><b> ANTECEDENTES HEREDOFAMILIARES</b> </h5>
+<br> 
+<div style="justify-content: space-between; display: flex; ">
+<label for="">De tipo psicológico y/o psiquiátrico</label>
+<h6 style=" position: relative; top: 10px; color: rgb(90, 90, 90); margin-right: 14%;">(demencia senil, bipolaridad, depresión, esquizofrenia.)</h6>
+</div>
+
+<textarea name="anhep1" id="anhep1" placeholder="Escriba aquí" style="width: 94%;  height: 100px; color: rgb(87, 84, 84); margin-left: 3%; margin-top: 10px; border: 1px solid gray; border-radius: 5px;"></textarea>
+<div style="justify-content: flex-start; display: flex; ">
+    <label for="">De tipo Médico:</label>
+    <h6 style=" position: relative; top: 10px; color: rgb(90, 90, 90); margin-left: 10px;">  (Hipertensión, diabetes, alergias, tiroides, gastritis etc)</h6>
+</div>
+     <textarea name="anhep2" id="anhep2" placeholder="Escriba aquí" style="width: 94%;  height: 110px; color: rgb(87, 84, 84); margin-left: 3%; margin-top: 10px; border: 1px solid gray; border-radius: 5px;"></textarea>
+     <div style="justify-content: flex-start; display: flex; ">
+        <label for="">Accidentes, cirugías, intervenciones médicas.</label>
+    </div>
+    <textarea name="anhep3" id="anhep3" placeholder="Escriba aquí" style="width: 94%;  height: 80px; color: rgb(87, 84, 84); margin-left: 3%; margin-top: 10px; border: 1px solid gray; border-radius: 5px;"></textarea>
+
+<label for="tiposfamilia" style="margin-bottom: 10px;">TIPO DE FAMILIA</label>
+<div class="tipofamilia">
+
+ <div>
+    <input type="checkbox" id="Completa" value="Completa">
+    <label for="tipo1">Completa</label>
+ </div>
+ <div>
+    <input type="checkbox" id="Nuclear" value="Nuclear">
+    <label for="tipo2">Nuclear</label>
+ </div>
+ <div>
+    <input type="checkbox" id="Desintegrada" value="Desintegrada">
+    <label for="tipo3">Desintegrada</label>
+ </div>
+
+
+ <div>
+    <input type="checkbox" id="Incompleta" value="Incompleta">
+    <label for="tipo4">Incompleta</label>
+ </div>
+ <div>
+    <input type="checkbox" id="Extensa disfuncional" value="Extensa disfuncional">
+    <label for="tipo5">Extensa disfuncional</label>
+ </div>
+ <div>
+    <input type="checkbox" id="OtrosCheckbox" value="Otros">
+    <label for="OtrosCheckbox">Otros</label>
+    <input type="text" name="Otros" id="Otrosinput" style="padding: 8px; 
+    width: 60%;
+    position: relative;
+    border: 1px solid rgb(235, 235, 235);
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid black;">
+</div>
+
+ <div>
+    <input type="checkbox" id="Funcional" value="Funcional">
+    <label for="tipo7">Funcional</label>
+ </div>
+ <div>
+    <input type="checkbox" id="Integrada" value="Integrada">
+    <label for="tipo8">Integrada</label>      
+ </div>
+
+</div><br>
+
+<h5 style="position: relative; top: 10px;"><b>IMPRESIÓN DIAGNÓSTICA</b> </h5>
+<textarea name="imprediag" id="imprediag" placeholder="Escriba aquí" style="width: 94%;  height: 100px; color: rgb(87, 84, 84); margin-left: 3%; margin-top: 10px; border: 1px solid gray; border-radius: 5px;"></textarea>
+
+<div class="button1" style="width: 80%; margin-left: 10%;">
+            <button type="submit" style="width: 100%; margin-bottom: 10px;">Enviar</button> </div><br>
+
+<div style="justify-content: space-between;  width: 80%; display: flex; margin-left: 10%;">
+            <button onclick="window.location.href='notas.html';" class="btn btn-success" style="background-color: rgb(3, 165, 3); width: 40%; ">Ir a Notas</button>
+        <button onclick="window.close();" style="background-color: rgb(221, 3, 3); width: 20%;" class="btn btn-danger">Salir</button>
+        </div>
+        
+    </form>
+
+    </div>
+
+    <script src="form.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const otrosCheckbox = document.getElementById('OtrosCheckbox');
+            const otrosInput = document.getElementById('Otrosinput');
+        
+            otrosInput.addEventListener('input', function() {
+                if (this.value) {
+                    otrosCheckbox.checked = true;
+                    otrosCheckbox.value = this.value;
+                } else {
+                    otrosCheckbox.checked = false;
+                    otrosCheckbox.value = 'Otros';
+                }
+            });
+        
+            otrosCheckbox.addEventListener('change', function() {
+                if (!this.checked) {
+                    otrosInput.value = '';
+                    this.value = 'Otros';
+                }
+            });
+        });
+        </script>    
+</body>
+</html>
+    
